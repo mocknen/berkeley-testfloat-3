@@ -185,6 +185,8 @@ int main( int argc, char *argv[] )
 "                         <float>_div      <float>_le_quiet\n"
 "                         <float>_rem      <float>_lt_quiet\n"
 "                         <float>_sqrt\n"
+"                         f32_nMulAdd      f32_mulSub\n"
+"                         f32_nMulSub\n"
 "  <int>:\n"
 "    ui32             --Unsigned 32-bit integer.\n"
 "    ui64             --Unsigned 64-bit integer.\n"
@@ -689,6 +691,15 @@ int main( int argc, char *argv[] )
         break;
      case F32_MULADD:
         gen_abcz_f32( f32_mulAdd );
+        break;
+     case F32_MULSUB:
+        gen_abcz_f32( f32_mulSub );
+        break;
+     case F32_NMULADD:
+        gen_abcz_f32( f32_nMulAdd );
+        break;
+     case F32_NMULSUB:
+        gen_abcz_f32( f32_nMulSub );
         break;
      case F32_SQRT:
         gen_az_f32( f32_sqrt );

@@ -1,3 +1,4 @@
 build/*/*.o
 build/*/*.a
 build/*/*.exe
+build/*/testfloat_gen
